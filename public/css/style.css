@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Shabnam;
+  src: url("../../webfonts/Shabnam.eot");
+  src: url("../../webfonts/Shabnam.eot?#iefix") format("embedded-opentype"), url("../../webfonts/Shabnam.woff2") format("woff2"), url("../../webfonts/Shabnam.woff") format("woff"), url("../../webfonts/Shabnam.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("../../webfonts/Shabnam-Bold.eot");
+  src: url("../../webfonts/Shabnam-Bold.eot?#iefix") format("embedded-opentype"), url("../../webfonts/Shabnam-Bold.woff2") format("woff2"), url("../../webfonts/Shabnam-Bold.woff") format("woff"), url("../../webfonts/Shabnam-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("../../webfonts/Shabnam-Thin.eot");
+  src: url("../../webfonts/Shabnam-Thin.eot?#iefix") format("embedded-opentype"), url("../../webfonts/Shabnam-Thin.woff2") format("woff2"), url("../../webfonts/Shabnam-Thin.woff") format("woff"), url("../../webfonts/Shabnam-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("../../webfonts/Shabnam-Light.eot");
+  src: url("../../webfonts/Shabnam-Light.eot?#iefix") format("embedded-opentype"), url("../../webfonts/Shabnam-Light.woff2") format("woff2"), url("../../webfonts/Shabnam-Light.woff") format("woff"), url("../../webfonts/Shabnam-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("../../webfonts/Shabnam-Medium.eot");
+  src: url("../../webfonts/Shabnam-Medium.eot?#iefix") format("embedded-opentype"), url("../../webfonts/Shabnam-Medium.woff2") format("woff2"), url("../../webfonts/Shabnam-Medium.woff") format("woff"), url("../../webfonts/Shabnam-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Shabnam';
+}
+
+.custom-container {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  .custom-container {
+    width: 100% !important;
+  }
+}
+
+.custom-container a.nav-link {
+  color: #000;
+  font-size: 13px;
+}
+
+.nav-header {
+  padding-top: 3rem;
+  direction: rtl;
+}
+
+.nav-header ul {
+  list-style: none;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-header ul li {
+  padding: 0 20px;
+}
+/*# sourceMappingURL=style.css.map */

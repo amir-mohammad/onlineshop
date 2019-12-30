@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
+    <link rel="stylesheet" href="/css/material/material-icons.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
 
@@ -15,11 +15,34 @@
 
 <body>
     {{> header}}
+    <div class="ov d-bloc d-lg-none"></div>
     {{{body}}}
 
     <script src="/js/libs/jquery.min.js"></script>
     <script src="/js/libs/popper.min.js"></script>
     <script src="/js/libs/bootstrap.min.js"></script>
+
+    <script>
+        $('.dropdown').on('show.bs.dropdown', function () {
+            $(this).children('a').addClass('activee');
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+        });
+
+        // Add slideUp animation to Bootstrap dropdown when collapsing.
+        $('.dropdown').on('hide.bs.dropdown', function () {
+             $(this).children('a').removeClass('activee');
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+        });
+
+        const sMenu = document.querySelector('.swip-menu');
+        const mButton  = document.querySelector('.menu-button');
+        mButton.addEventListener('click',() =>{
+            document.querySelector('.ov').classList.toggle('overlay')
+          sMenu.classList.toggle('open');
+          
+        })
+        
+    </script>
 </body>
 
 </html>
